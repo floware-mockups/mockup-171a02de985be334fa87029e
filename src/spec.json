@@ -1,0 +1,273 @@
+{
+  "title": "Gestione delle manutenzioni del verde",
+  "description": "Prototipo per registrare e monitorare le richieste di manutenzione del verde pubblico, con riepilogo per priorità e quartiere. Tutti i dati sono inventati.",
+  "accent": "emerald",
+  "pages": [
+    {
+      "id": "dashboard",
+      "title": "Dashboard",
+      "description": "Panoramica delle richieste e delle attività di manutenzione.",
+      "metrics": [
+        {
+          "label": "Richieste aperte",
+          "value": "18"
+        },
+        {
+          "label": "Priorità alta",
+          "value": "4"
+        },
+        {
+          "label": "In lavorazione",
+          "value": "7"
+        },
+        {
+          "label": "Completate nel mese",
+          "value": "12"
+        }
+      ],
+      "columns": [
+        "Quartiere",
+        "Aperte",
+        "Priorità alta",
+        "In lavorazione",
+        "Completate"
+      ],
+      "rows": [
+        [
+          "Lumo",
+          "5",
+          "1",
+          "2",
+          "4"
+        ],
+        [
+          "Vela",
+          "4",
+          "1",
+          "2",
+          "3"
+        ],
+        [
+          "Nubi",
+          "3",
+          "0",
+          "1",
+          "2"
+        ],
+        [
+          "Bruma",
+          "6",
+          "2",
+          "2",
+          "3"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "richieste",
+      "title": "Richieste",
+      "description": "Consulta e filtra le segnalazioni per stato, priorità e quartiere.",
+      "metrics": [],
+      "columns": [
+        "Codice",
+        "Area",
+        "Quartiere",
+        "Intervento richiesto",
+        "Priorità",
+        "Stato",
+        "Data segnalazione"
+      ],
+      "rows": [
+        [
+          "VR-001",
+          "Giardino delle Lanterna",
+          "Lumo",
+          "Potatura di alberi",
+          "Alta",
+          "Aperta",
+          "2025-04-03"
+        ],
+        [
+          "VR-002",
+          "Viale dei Mirti",
+          "Vela",
+          "Ripristino irrigazione",
+          "Media",
+          "In lavorazione",
+          "2025-04-04"
+        ],
+        [
+          "VR-003",
+          "Parco delle Nebbie",
+          "Nubi",
+          "Sfalcio del prato",
+          "Bassa",
+          "Pianificata",
+          "2025-04-05"
+        ],
+        [
+          "VR-004",
+          "Piazza dei Semi",
+          "Bruma",
+          "Rimozione rami caduti",
+          "Alta",
+          "Aperta",
+          "2025-04-06"
+        ],
+        [
+          "VR-005",
+          "Giardino delle Lanterne",
+          "Lumo",
+          "Controllo giochi e siepi",
+          "Media",
+          "Completata",
+          "2025-04-07"
+        ],
+        [
+          "VR-006",
+          "Viale dei Mirti",
+          "Vela",
+          "Potatura di alberi",
+          "Bassa",
+          "In lavorazione",
+          "2025-04-08"
+        ],
+        [
+          "VR-007",
+          "Parco delle Nebbie",
+          "Nubi",
+          "Ripristino irrigazione",
+          "Alta",
+          "Aperta",
+          "2025-04-09"
+        ],
+        [
+          "VR-008",
+          "Piazza dei Semi",
+          "Bruma",
+          "Sfalcio del prato",
+          "Media",
+          "Pianificata",
+          "2025-04-10"
+        ]
+      ],
+      "form": [
+        "Codice",
+        "Area",
+        "Quartiere",
+        "Intervento richiesto",
+        "Priorità",
+        "Stato",
+        "Data segnalazione"
+      ]
+    },
+    {
+      "id": "nuova-richiesta",
+      "title": "Nuova richiesta",
+      "description": "Registra una nuova esigenza di manutenzione del verde pubblico.",
+      "metrics": [],
+      "columns": [
+        "Codice",
+        "Area",
+        "Quartiere",
+        "Intervento richiesto",
+        "Priorità",
+        "Stato",
+        "Data segnalazione"
+      ],
+      "rows": [],
+      "form": [
+        "Codice",
+        "Area",
+        "Quartiere",
+        "Intervento richiesto",
+        "Priorità",
+        "Stato",
+        "Data segnalazione"
+      ]
+    },
+    {
+      "id": "pianificazione",
+      "title": "Pianificazione",
+      "description": "Organizza gli interventi programmati e verifica le attività assegnate.",
+      "metrics": [
+        {
+          "label": "Interventi pianificati",
+          "value": "9"
+        },
+        {
+          "label": "In ritardo",
+          "value": "2"
+        },
+        {
+          "label": "Squadre operative",
+          "value": "3"
+        }
+      ],
+      "columns": [
+        "Codice",
+        "Area",
+        "Quartiere",
+        "Intervento",
+        "Priorità",
+        "Squadra",
+        "Data prevista",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "PL-101",
+          "Giardino delle Lanterne",
+          "Lumo",
+          "Potatura di alberi",
+          "Alta",
+          "Ramo Verde",
+          "2025-04-12",
+          "Pianificata"
+        ],
+        [
+          "PL-102",
+          "Viale dei Mirti",
+          "Vela",
+          "Ripristino irrigazione",
+          "Media",
+          "Foglia Chiara",
+          "2025-04-13",
+          "Pianificata"
+        ],
+        [
+          "PL-103",
+          "Parco delle Nebbie",
+          "Nubi",
+          "Sfalcio del prato",
+          "Bassa",
+          "Ramo Verde",
+          "2025-04-14",
+          "In lavorazione"
+        ],
+        [
+          "PL-104",
+          "Piazza dei Semi",
+          "Bruma",
+          "Rimozione rami caduti",
+          "Alta",
+          "Germoglio Blu",
+          "2025-04-11",
+          "In ritardo"
+        ],
+        [
+          "PL-105",
+          "Giardino delle Lanterne",
+          "Lumo",
+          "Controllo giochi e siepi",
+          "Media",
+          "Foglia Chiara",
+          "2025-04-15",
+          "Pianificata"
+        ]
+      ],
+      "form": []
+    }
+  ]
+}
